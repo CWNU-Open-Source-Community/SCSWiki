@@ -40,16 +40,17 @@ export const siteSections: SiteSection[] = [
     title: '学业与课程',
   },
   {
-    activeMatch: '^/(competitions|development|research|career)/',
+    activeMatch: '^/(events|competitions|development|research|career)/',
     description: '连接竞赛、开发、科研实践与升学就业。',
     index: '03',
     links: [
+      { href: '/events/', title: '活动与竞赛' },
       { href: '/competitions/', title: '学科竞赛' },
       { href: '/development/', title: '开发与工具' },
       { href: '/research/', title: '科研与项目' },
       { href: '/career/', title: '升学与就业' },
     ],
-    primaryHref: '/competitions/',
+    primaryHref: '/events/',
     title: '成长与实践',
   },
   {
