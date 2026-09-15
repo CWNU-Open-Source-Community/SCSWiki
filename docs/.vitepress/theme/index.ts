@@ -5,6 +5,8 @@ import AutoMergeTable from './components/AutoMergeTable.vue';
 import ContentMeta from './components/ContentMeta.vue';
 import ElectiveCourseTable from './components/ElectiveCourseTable.vue';
 import HomePage from './components/HomePage.vue';
+import EventCenter from './components/EventCenter.vue';
+import EventDetails from './components/EventDetails.vue';
 import MaterialResourceList from './components/MaterialResourceList.vue';
 import ProgrammingLanguageNav from './components/ProgrammingLanguageNav.vue';
 import ScsLayout from './components/ScsLayout.vue';
@@ -19,6 +21,8 @@ export default {
     app.component('ContentMeta', ContentMeta);
     app.component('ElectiveCourseTable', ElectiveCourseTable);
     app.component('HomePage', HomePage);
+    app.component('EventCenter', EventCenter);
+    app.component('EventDetails', EventDetails);
     app.component('MaterialResourceList', MaterialResourceList);
     app.component('ProgrammingLanguageNav', ProgrammingLanguageNav);
     app.component(
