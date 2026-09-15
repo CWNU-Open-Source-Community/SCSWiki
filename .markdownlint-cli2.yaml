@@ -11,6 +11,8 @@ config:
       - ContentMeta
       - ElectiveCourseTable
       - HomePage
+      - EventCenter
+      - EventDetails
       - MaterialResourceList
       - ProgrammingLanguageNav
       - XingshuCampusMap
