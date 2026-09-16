@@ -1,0 +1,39 @@
+name: 推荐活动或更新活动信息
+description: 为活动与竞赛中心提供公开来源、时间修正或参与经验
+title: '[活动] '
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 活动名称
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 活动类型
+      options:
+        - 开源活动
+        - 学科竞赛
+        - 社区共建
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 官方来源链接
+      description: 提供可公开访问的官网或正式通知地址。
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 推荐或修正内容
+      description: 请说明面向对象、年份或届次、报名时间与时区；不确定的信息写待确认。修正已有活动时请附本站页面地址。
+    validations:
+      required: true
+  - type: textarea
+    id: experience
+    attributes:
+      label: 参与经验（可选）
+      description: 注明参加年份，将个人经验与官方规则分开。不填写个人隐私或非公开材料。

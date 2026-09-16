@@ -1,6 +1,8 @@
 import type { DefaultTheme } from 'vitepress';
+import { eventSidebar } from './event-sidebar';
 
 export const sidebar: DefaultTheme.Sidebar = {
+  '/events/': eventSidebar(),
   '/start/': [
     {
       text: '新生专题',
@@ -62,6 +64,7 @@ export const sidebar: DefaultTheme.Sidebar = {
     {
       text: '学科竞赛',
       items: [
+        { text: '活动与竞赛中心', link: '/events/' },
         { text: '总览', link: '/competitions/' },
         { text: '算法类竞赛', link: '/competitions/algorithm' },
         { text: '软件类竞赛', link: '/competitions/software' },
