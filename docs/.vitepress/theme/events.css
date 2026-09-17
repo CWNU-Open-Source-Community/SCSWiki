@@ -502,6 +502,29 @@
   isolation: isolate;
   color: #fff;
 }
+.event-cover.has-artwork {
+  height: 200px;
+  padding: 0;
+  background: #fff;
+}
+.event-cover.has-artwork::before,
+.event-cover.has-artwork::after {
+  display: none;
+}
+.event-cover.has-artwork .event-artwork {
+  height: 100%;
+  border-radius: 0;
+  padding: 36px 24px 16px;
+}
+.event-cover.has-artwork .cover-category {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  z-index: 1;
+  color: #34435e;
+  background: #fffffff2;
+  border-color: #e4e7ed;
+}
 .event-cover::before,
 .event-cover::after {
   content: '';
