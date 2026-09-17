@@ -5,17 +5,17 @@ category: competitions
 audience:
   - 本科生
 content_type: experience
-status: active
+status: needs-review
 maintainers:
   - 程序设计算法协会
-sources:
-  - name: 西华师范大学程序设计算法协会
-    url: https://www.cwnupaa.com/
+sources: []
 ---
 
 <ContentMeta />
 
 # 竞赛与实践总览
+
+想寻找可以参与的开源活动与比赛？前往[活动与竞赛中心](/events/)，按方向筛选活动、查看活动介绍与准备建议。
 
 本页不说明学院或学校对竞赛的认定规则。竞赛认定、奖项统计、加分或报销等事项必须以正式通知为准。
 
@@ -30,3 +30,9 @@ sources:
 - 校内选拔规则。
 - 当前负责人和联系方式。
 - 经费、认定、奖助相关流程。
+
+## 参考资料名称
+
+本页暂未提供可访问的来源地址，以下名称仅供检索核对；活动资格、规则和日期仍需向主办方确认。
+
+- 西华师范大学程序设计算法协会
