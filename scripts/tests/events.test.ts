@@ -124,6 +124,16 @@ describe('活动状态与筛选', () => {
       const event = eventSchema.parse(entry.event);
       expect(event.aliases?.length).toBeGreaterThan(0);
       expect(event.topic).toBeTruthy();
+      expect(event.overview).toBeDefined();
+      expect(event.artwork).toBeDefined();
+      if (event.artwork?.src) {
+        const asset = fs.readFileSync(path.resolve('docs/public', `.${event.artwork.src}`));
+        expect(asset.subarray(0, 4).toString()).toBe('RIFF');
+        expect(asset.subarray(8, 12).toString()).toBe('WEBP');
+      } else {
+        expect(event.artwork?.kind).toBe('theme');
+        expect(event.artwork?.symbol).toBeTruthy();
+      }
       expect(navigation.filter((item) => item.text === entry.title)).toHaveLength(1);
       expect(entry.sources).toEqual([]);
       expect(entry.status).toBe('needs-review');
@@ -133,5 +143,26 @@ describe('活动状态与筛选', () => {
     for (const file of fs.readdirSync(root).filter((file) => file.endsWith('.md'))) {
       expect(fs.readFileSync(path.join(root, file), 'utf8')).not.toMatch(/\bhttps?:\/\/|\bwww\./i);
     }
+  });
+  it('正式图像需有站内资源，不能使用越界路径', () => {
+    const artwork = {
+      kind: 'official-mark',
+      alt: '测试标识',
+      source: '官方入口',
+      surface: 'light',
+    };
+    expect(eventSchema.safeParse({ ...fixture, artwork }).success).toBe(false);
+    expect(
+      eventSchema.safeParse({
+        ...fixture,
+        artwork: { ...artwork, src: '/events/marks/../outside.webp' },
+      }).success,
+    ).toBe(false);
+    expect(
+      eventSchema.safeParse({
+        ...fixture,
+        artwork: { ...artwork, src: '/events/marks/gplt.webp' },
+      }).success,
+    ).toBe(true);
   });
 });

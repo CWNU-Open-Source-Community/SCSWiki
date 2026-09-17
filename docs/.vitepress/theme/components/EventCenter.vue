@@ -4,6 +4,7 @@ import { withBase } from 'vitepress';
 import { data as events } from '../../events.data';
 import { eventKinds, eventStatus, filterEvents } from '../../events';
 import { useEventClock } from '../useEventClock';
+import EventArtwork from './EventArtwork.vue';
 
 const query = ref('');
 const kind = ref('');
@@ -206,26 +207,29 @@ const switchArchive = (value: boolean) => {
           <article v-for="event in visible.slice(0, limit)" :key="event.url" class="event-card">
             <a
               class="event-cover"
-              :class="`cover-${event.cover}`"
+              :class="[`cover-${event.cover}`, { 'has-artwork': event.artwork }]"
               :href="withBase(event.url)"
               :aria-label="`查看${event.title}详情`"
-              ><span class="cover-category">{{ event.kind }}</span
-              ><span class="cover-decoration" aria-hidden="true">{{
-                event.cover === 'wiki'
-                  ? '{ }'
-                  : event.cover === 'ladder'
-                    ? '↗'
-                    : event.cover === 'blue'
-                      ? '⌘'
-                      : event.cover === 'fest'
-                        ? '✳'
-                        : event.cover === 'summer'
-                          ? '☼'
-                          : '&lt;/&gt;'
-              }}</span
-              ><span class="cover-word">{{ event.eyebrow }}</span
-              ><span class="cover-footer"
-                >{{ event.tags[0] }} <span aria-hidden="true">↗</span></span
+              ><span class="cover-category">{{ event.kind }}</span>
+              <EventArtwork v-if="event.artwork" :event="event" />
+              <template v-else
+                ><span class="cover-decoration" aria-hidden="true">{{
+                  event.cover === 'wiki'
+                    ? '{ }'
+                    : event.cover === 'ladder'
+                      ? '↗'
+                      : event.cover === 'blue'
+                        ? '⌘'
+                        : event.cover === 'fest'
+                          ? '✳'
+                          : event.cover === 'summer'
+                            ? '☼'
+                            : '&lt;/&gt;'
+                }}</span
+                ><span class="cover-word">{{ event.eyebrow }}</span
+                ><span class="cover-footer"
+                  >{{ event.tags[0] }} <span aria-hidden="true">↗</span></span
+                ></template
               ></a
             >
             <div class="event-card-body">

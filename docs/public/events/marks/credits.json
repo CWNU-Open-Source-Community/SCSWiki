@@ -1,0 +1,188 @@
+{
+  "purpose": "仅用于对应赛事与活动的介绍和识别，不表示主办、合作或背书；标识及主视觉权利归各权利人。",
+  "checked": "2026-09-17",
+  "items": [
+    {
+      "file": "astar.webp",
+      "source": "百度之星官网 · 2026 年主视觉",
+      "kind": "official-visual",
+      "originalFile": "astar-official.jpg",
+      "sha256": "114b407f38f53c2cdd8904387afd0475cd8268f053aef2f87a9c13569b29acf9"
+    },
+    {
+      "file": "blockchain.webp",
+      "source": "CCF 区块链竞赛官网 · 安全主题主视觉",
+      "kind": "official-visual",
+      "originalFile": "blockchain-official.png",
+      "sha256": "2a3c5d01f9f9ab2cdbaea4e8ff67daa11d0de11a2b8400efecff1869ee96fd9c"
+    },
+    {
+      "file": "c4-ai.webp",
+      "source": "人工智能创意赛官网 · CCCC AI 标识",
+      "kind": "official-mark",
+      "originalFile": "c4-ai-official.png",
+      "sha256": "31222361e707fe2b7216f630c7d6a1ceb8a7be8a8a0b5f8645224cdfacf14079"
+    },
+    {
+      "file": "ccf-open.webp",
+      "source": "GitLink 赛事官网 · 第八届（2026）主视觉",
+      "kind": "official-visual",
+      "originalFile": "ccf-open-official.jpg",
+      "sha256": "f1230481474ff02de68c16ec6212c30a00cbd710a63d0c40df1d2abe46e0f2c2"
+    },
+    {
+      "file": "challenge-business.webp",
+      "source": "挑战杯创业计划竞赛官网 · 第十五届（2026）标识",
+      "kind": "official-mark",
+      "originalFile": "challenge-business-official-render.png",
+      "sha256": "ece4b81a97a43e97e9ddf91e1f301eab1dd334cca1ed1e86dc9100212dc01c11"
+    },
+    {
+      "file": "challenge-science.webp",
+      "source": "挑战杯官网 · 学术科技作品竞赛标识",
+      "kind": "official-mark",
+      "originalFile": "challenge-official-render.png",
+      "sha256": "19b93682184202a5eeca85ab7b4d5794093c5bf4e50af6fc62d8a8ee0c80ad90"
+    },
+    {
+      "file": "ciscn.webp",
+      "source": "全国大学生信息安全竞赛官网",
+      "kind": "official-mark",
+      "originalFile": "ciscn-official.jpg",
+      "sha256": "21f113945d5f026778b07e134cae6fdb3776e70d4655fe701a9f45f09e7ae7a7"
+    },
+    {
+      "file": "computer-design.webp",
+      "source": "中国大学生计算机设计大赛官网",
+      "kind": "official-mark",
+      "originalFile": "computer-design-official.jpg",
+      "sha256": "01d9613b0b4657ea7018aa787f343e0cc3d0188a6fb782fc060627f6ac64ceb9"
+    },
+    {
+      "file": "craic.webp",
+      "source": "中国机器人及人工智能大赛官网",
+      "kind": "official-mark",
+      "originalFile": "craic-official.png",
+      "sha256": "a0a4439e168af551f71b611730298c7cd42b8f053602779553ecc5946b2c1050"
+    },
+    {
+      "file": "cumcm.webp",
+      "source": "全国大学生数学建模竞赛官网 · 页首主视觉",
+      "kind": "official-visual",
+      "originalFile": "cumcm-official.jpg",
+      "sha256": "dd11800068d423046b7fc7efc276aa8743391a565e590f329d2a582ae2981348"
+    },
+    {
+      "file": "electronic.webp",
+      "source": "全国大学生电子设计竞赛官网",
+      "kind": "official-mark",
+      "originalFile": "electronic-official.png",
+      "sha256": "a162e7cbe5839634d256192d728e11add481760861f68332d30e349a9a5b4b59"
+    },
+    {
+      "file": "glcc.webp",
+      "source": "GitLink 编程夏令营官网 · 第五届（2026）主视觉",
+      "kind": "official-visual",
+      "originalFile": "glcc-official.png",
+      "sha256": "c282ea9d57ffecf7e9eb678821df562c9810708ec01cb2191e6c4557e6c36bcc"
+    },
+    {
+      "file": "gplt.webp",
+      "source": "团体程序设计天梯赛官网 · 标题标识",
+      "kind": "official-mark",
+      "originalFile": "gplt-official.png",
+      "sha256": "52fca213387112275329e361023c102412bd19dda1be2ea17d5441e159a038f7"
+    },
+    {
+      "file": "gsoc-2026.webp",
+      "source": "Google Summer of Code 官网",
+      "kind": "official-mark",
+      "originalFile": "gsoc-2026-official-render.png",
+      "sha256": "ea16041cd5614c5c072899151a193ce6288843a37afd6df1ac60f8bf64a2a35a"
+    },
+    {
+      "file": "hacktoberfest-2026.webp",
+      "source": "Hacktoberfest 2026 官网",
+      "kind": "official-mark",
+      "originalFile": "hacktoberfest-2026-official-render.png",
+      "sha256": "d68ecfdb7e5dec80e434d4adc15862e3f4ab06420f78bb6cc51e4367a97ade54"
+    },
+    {
+      "file": "icpc.webp",
+      "source": "ICPC 官网 · 2026 年全球总决赛标识",
+      "kind": "official-visual",
+      "originalFile": "icpc-official.png",
+      "sha256": "6413d4d28c6967587fe1fe0185a2173466f5a16a317c802d02b8bd5c80d658ab"
+    },
+    {
+      "file": "jittor.webp",
+      "source": "计图官方网站 · Jittor 框架标识",
+      "kind": "project-mark",
+      "originalFile": "jittor-official-render.png",
+      "sha256": "3bc2475c1ad129be1e7a1fdee425193795484fe1cc23303e48cec5ae3e2b3ca5"
+    },
+    {
+      "file": "lanqiao.webp",
+      "source": "蓝桥杯大赛官网",
+      "kind": "official-mark",
+      "originalFile": "lanqiao-official.png",
+      "sha256": "5dc2561aa9980399381aa3dae51ccb7668578e4924f518e20b78df6acc1fe848"
+    },
+    {
+      "file": "lfx.webp",
+      "source": "Linux Foundation 官网 · LFX 项目标识",
+      "kind": "project-mark",
+      "originalFile": "lfx-official-render.png",
+      "sha256": "a398fa58b6fe6891a876c79dbad4635d680b5ee33e3d4977a6d9847c3f37dde9"
+    },
+    {
+      "file": "matibei.webp",
+      "source": "码蹄杯官网 · 第八届（2026）主视觉",
+      "kind": "official-visual",
+      "originalFile": "matibei-banner-official.jpg",
+      "sha256": "44b38e19d86738f7f5425c472f9ba920b6926713293e6a7a453afe67742d0ffb"
+    },
+    {
+      "file": "ncccu.webp",
+      "source": "全国高校计算机能力挑战赛官网",
+      "kind": "official-mark",
+      "originalFile": "ncccu-official.png",
+      "sha256": "92640121e5e42358bf838d0a8427073a8158e0878a8c7ba838615cee34521df2"
+    },
+    {
+      "file": "os-design.webp",
+      "source": "操作系统设计赛官网 · CSCC 系列标识",
+      "kind": "project-mark",
+      "originalFile": "os-design-official.png",
+      "sha256": "4697da00705c1fe0325e6d46c639ad0fd5c40bae9dac2d96f4b76f0fac39b974"
+    },
+    {
+      "file": "oscamp.webp",
+      "source": "开源操作系统训练营 · LearningOS 社区标识",
+      "kind": "project-mark",
+      "originalFile": "oscamp-official.png",
+      "sha256": "75a6c48b206fcf1b40f9d95993c13a416d88d2e4b7b3c84ec66e64dbed9eb516"
+    },
+    {
+      "file": "ospp.webp",
+      "source": "开源之夏官网",
+      "kind": "official-mark",
+      "originalFile": "ospp-official-render.png",
+      "sha256": "2955968d2ae68b9e186b87039e8d2e180cc818d5ecbcb70c8c621607ae68f907"
+    },
+    {
+      "file": "outreachy.webp",
+      "source": "Outreachy 官网",
+      "kind": "official-mark",
+      "originalFile": "outreachy-official-render.png",
+      "sha256": "3700ba94b25795e935aa5d00c6e83c0fd106be9e37fef50bfc521c873fe3a4fe"
+    },
+    {
+      "file": "robomaster.webp",
+      "source": "RoboMaster 官网",
+      "kind": "official-mark",
+      "originalFile": "robomaster-official.png",
+      "sha256": "3c93d4118ac681789dd3ce4c114d4a176c16e6f3834d013e1b7ba7cfaeb61fec"
+    }
+  ]
+}

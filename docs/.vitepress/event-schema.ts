@@ -15,6 +15,30 @@ export const eventSchema = z
     schedule: z.string().min(1),
     checked: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
     reviewRequired: z.boolean().optional(),
+    artwork: z
+      .object({
+        src: z
+          .string()
+          .regex(/^\/events\/marks\/[a-z0-9-]+\.(?:png|jpg|webp)$/)
+          .optional(),
+        alt: z.string().min(1),
+        kind: z.enum(['official-mark', 'official-visual', 'project-mark', 'theme']),
+        source: z.string().min(1),
+        surface: z.enum(['light', 'dark']),
+        symbol: z.enum(['code', 'data', 'project', 'book']).optional(),
+      })
+      .refine((artwork) => artwork.kind === 'theme' || Boolean(artwork.src), {
+        message: '正式标识或主视觉必须提供站内图片',
+      })
+      .optional(),
+    overview: z
+      .object({
+        format: z.string().min(1),
+        focus: z.string().min(1),
+        preparation: z.string().min(1),
+        deliverable: z.string().min(1),
+      })
+      .optional(),
     order: z.number(),
     ongoing: z.boolean().optional(),
     archived: z.boolean().optional(),
