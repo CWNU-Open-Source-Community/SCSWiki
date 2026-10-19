@@ -30,6 +30,6 @@ sources: []
 - [Git 入门](/development/git-basics)：安装配置、安全提交、分支协作、撤销恢复与 Pull Request。
 - [Linux 入门](/development/linux-basics)：路径、文件、权限、进程和包管理基础。
 - [传统开发](/development/tradition)：待补充。
-- [AI 赋能开发](/development/ai)：《Vibe Coding 介绍 · 序章》在线阅读与 PDF 下载。
+- [AI 赋能开发](/development/ai)：《Vibe Coding 介绍》系列，涵盖基础知识与 Agent 安装配置，提供在线阅读与 PDF 下载。
 - [GPT 订阅与支付经验](/development/gpt-subscription)：Android 场景下的订阅准备与支付经验。
 - [Agent 开发](/development/agent)：待补充。
