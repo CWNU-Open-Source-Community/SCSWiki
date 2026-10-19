@@ -37,9 +37,13 @@ sources:
 
 介绍 Transformer、代码生成、Agent 与 Harness 的技术背景。
 
-[在线阅读（PDF，12 页）](/development/vibe-coding-prologue.pdf)
-
-<a href="/development/vibe-coding-prologue.pdf" download="Vibe Coding介绍-序章.pdf">下载 PDF</a>
+<PdfReader
+  src="/development/vibe-coding-prologue.pdf"
+  title="Vibe Coding 介绍 · 序章"
+  download-name="Vibe Coding介绍-序章.pdf"
+  :pages="12"
+  loading="eager"
+/>
 
 ## Vibe Coding 介绍 · 装上你的第一个Agent
 
@@ -47,6 +51,9 @@ sources:
 
 以 Windows 为主，补充 macOS 与 Linux 的安装入口。资料核对日期：2026 年 10 月 17 日。
 
-[在线阅读（PDF，24 页）](/development/vibe-coding-first-agent.pdf)
-
-<a href="/development/vibe-coding-first-agent.pdf" download="Vibe Coding 介绍 · 装上你的第一个Agent.pdf">下载 PDF</a>
+<PdfReader
+  src="/development/vibe-coding-first-agent.pdf"
+  title="Vibe Coding 介绍 · 装上你的第一个Agent"
+  download-name="Vibe Coding 介绍 · 装上你的第一个Agent.pdf"
+  :pages="24"
+/>

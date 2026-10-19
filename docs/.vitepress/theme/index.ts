@@ -26,6 +26,10 @@ export default {
     app.component('MaterialResourceList', MaterialResourceList);
     app.component('ProgrammingLanguageNav', ProgrammingLanguageNav);
     app.component(
+      'PdfReader',
+      defineAsyncComponent(() => import('./components/PdfReader.vue')),
+    );
+    app.component(
       'XingshuCampusMap',
       defineAsyncComponent(() => import('./components/XingshuCampusMap.vue')),
     );
