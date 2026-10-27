@@ -41,6 +41,7 @@ sources: []
 | [Java Web应用开发](/materials/javaweb)             | 知识点笔记 / 试题资料 | 活跃 |
 | [单片机原理及应用](/materials/microcontroller)     | 笔记 / 实验 / 试题    | 活跃 |
 | [习近平新时代中国特色社会主义思想](/materials/xjp) | 知识点笔记 / 试题资料 | 活跃 |
+| [形势与政策](/materials/situation-and-policy)      | 试题资料              | 活跃 |
 
 ## 贡献方式
 

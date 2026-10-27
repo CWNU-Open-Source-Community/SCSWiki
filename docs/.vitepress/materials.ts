@@ -985,6 +985,31 @@ export const courseMaterials = {
       },
     ],
   },
+  'situation-and-policy': {
+    title: '形势与政策',
+    directory: '/materials/situation-and-policy/',
+    categories: [
+      {
+        title: '试题资料',
+        description: '课程试题与复习资料。',
+        resources: [
+          {
+            title: '2025 级形势与政策试题 A 卷',
+            description: '2026—2027 学年第一学期考查试题。',
+            status: '已授权公开',
+            files: [
+              {
+                title: '试题 A 卷',
+                href: '/materials/situation-and-policy/exam-2026-autumn-cohort-2025-a.pdf',
+                format: 'PDF',
+                role: '试卷',
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
   xjp: {
     title: '习近平新时代中国特色社会主义思想',
     directory: '/materials/xjp/',
