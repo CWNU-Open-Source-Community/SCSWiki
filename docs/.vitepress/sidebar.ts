@@ -152,6 +152,7 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: 'Java Web应用开发', link: '/materials/javaweb' },
         { text: '单片机原理及应用', link: '/materials/microcontroller' },
         { text: '习近平新时代中国特色社会主义思想', link: '/materials/xjp' },
+        { text: '形势与政策', link: '/materials/situation-and-policy' },
       ],
     },
   ],
