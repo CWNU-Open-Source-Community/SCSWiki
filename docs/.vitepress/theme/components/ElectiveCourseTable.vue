@@ -197,8 +197,9 @@ const filteredCourses = computed(() => {
 
 <style scoped>
 .elective-course-panel {
+  background: var(--scs-surface);
   border: 1px solid var(--scs-line);
-  border-radius: 6px;
+  border-radius: 10px;
   margin: 22px 0 30px;
   overflow: hidden;
 }
@@ -206,48 +207,65 @@ const filteredCourses = computed(() => {
 .elective-course-panel__header {
   align-items: flex-start;
   background: var(--scs-soft-bg);
+  border-bottom: 1px solid var(--scs-line);
   display: flex;
   gap: 16px;
   justify-content: space-between;
-  padding: 16px;
+  padding: 18px;
 }
 
 .elective-course-panel__header h2 {
   border: 0;
+  font-size: 20px;
   margin: 0;
   padding: 0;
 }
 
 .elective-course-panel__header p {
   color: var(--scs-muted);
+  font-size: 13.5px;
   margin: 8px 0 0;
 }
 
 .elective-course-panel__kicker {
   color: var(--scs-active) !important;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
+  letter-spacing: 0.03em;
   margin: 0 0 6px !important;
 }
 
 .elective-course-panel__download {
+  background: var(--vp-c-bg);
   border: 1px solid var(--scs-line);
-  border-radius: 4px;
+  border-radius: 7px;
+  color: var(--scs-active);
   flex: 0 0 auto;
-  padding: 7px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 12px;
   text-decoration: none;
+  transition:
+    border-color 150ms ease,
+    background-color 150ms ease;
+}
+
+.elective-course-panel__download:hover {
+  background: var(--vp-c-brand-soft);
+  border-color: var(--scs-active);
 }
 
 .elective-course-stats {
+  background: var(--scs-line);
+  border-bottom: 1px solid var(--scs-line);
   display: grid;
   gap: 1px;
   grid-template-columns: repeat(3, 1fr);
-  background: var(--scs-line);
 }
 
 .elective-course-stats div {
   background: var(--vp-c-bg);
-  padding: 12px 16px;
+  padding: 14px 18px;
 }
 
 .elective-course-stats strong,
@@ -256,28 +274,30 @@ const filteredCourses = computed(() => {
 }
 
 .elective-course-stats strong {
-  color: var(--scs-text);
+  color: var(--vp-c-text-1);
   font-size: 24px;
+  font-weight: 700;
   line-height: 1.2;
 }
 
 .elective-course-stats span {
   color: var(--scs-muted);
-  font-size: 13px;
+  font-size: 12.5px;
+  margin-top: 2px;
 }
 
 .elective-course-controls {
   display: grid;
   gap: 12px;
   grid-template-columns: minmax(220px, 1fr) minmax(130px, 180px) minmax(130px, 180px);
-  padding: 16px;
+  padding: 16px 18px;
 }
 
 .elective-course-controls label {
   color: var(--scs-muted);
   display: grid;
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 12.5px;
+  font-weight: 600;
   gap: 6px;
 }
 
@@ -285,18 +305,27 @@ const filteredCourses = computed(() => {
 .elective-course-controls select {
   background: var(--vp-c-bg);
   border: 1px solid var(--scs-line);
-  border-radius: 4px;
+  border-radius: 7px;
   color: var(--scs-text);
   font: inherit;
+  font-size: 13.5px;
   min-height: 36px;
-  padding: 6px 9px;
+  padding: 6px 10px;
+  transition: border-color 150ms ease;
+}
+
+.elective-course-controls input:focus,
+.elective-course-controls select:focus {
+  border-color: var(--scs-active);
+  outline: 3px solid var(--vp-c-brand-soft);
 }
 
 .elective-course-panel__result,
 .elective-course-panel__empty {
   color: var(--scs-muted);
+  font-size: 13px;
   margin: 0;
-  padding: 0 16px 16px;
+  padding: 0 18px 16px;
 }
 
 .elective-course-table-wrap {
@@ -305,6 +334,9 @@ const filteredCourses = computed(() => {
 }
 
 .elective-course-table {
+  border: 0;
+  border-radius: 0;
+  margin: 0;
   min-width: 980px;
 }
 
